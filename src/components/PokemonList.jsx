@@ -24,7 +24,7 @@ export default function PokemonList() {
 
     const handleSearchResult =  () => {
 
-        const result = pokemonCards.filter(pokemon => pokemon.name.toLowerCase().includes(searchPokemon))
+        const result = pokemonCards.filter(pokemon => pokemon.name.toLowerCase().includes(searchPokemon.toLowerCase()))
         setSearchResult(result)
 
     }

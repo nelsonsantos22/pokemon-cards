@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../css/search.css';
+
 export default function SearchBox (props) {
     return (
 
@@ -10,6 +12,7 @@ export default function SearchBox (props) {
                 placeholder='Search pokemon card'
                 value = {props.searchPokemon}
                 onChange = {props.handleSearch}
+                className = 'search-input'
             />
 
         </div>
