@@ -37,7 +37,7 @@ export default function App () {
   return (
 
     <div>
-      
+
       <h1>My Pokemon Card Collection</h1>
 
       <Router>

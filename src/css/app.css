@@ -29,3 +29,8 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.loading-div {
+    display: flex;
+    justify-content: center;
+}

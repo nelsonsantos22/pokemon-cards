@@ -7,11 +7,11 @@ export default function SearchBox (props) {
 
             <input 
                 type='search' 
-                placeholder='Search Pokemon card'
+                placeholder='Search pokemon card'
                 value = {props.searchPokemon}
                 onChange = {props.handleSearch}
             />
-            
+
         </div>
     )
 }
