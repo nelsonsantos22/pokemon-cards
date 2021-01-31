@@ -1,0 +1,140 @@
+.info-container {
+    display: flex;
+    justify-content: center;
+    padding: .75rem;
+    flex-wrap: wrap;
+
+}
+
+.img-div {
+    display: flex;
+    justify-content: center;
+    padding-left: 5rem;
+    margin-right: 3rem;
+
+}
+
+
+.card-img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+.details-div {
+    flex: flex;
+    width: 50%;
+    padding: 0.75rem;
+
+}
+
+
+.pokeheader-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pokename-div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.pokename {
+    font-size: xx-large;
+}
+
+
+.pokedex{
+    font-size: large;
+}
+
+
+.hp-div {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.hp-header {
+    font-size: large;
+}
+
+
+.hp-value {
+    font-size: x-large;
+}
+
+
+.sub-info {
+    margin-top: 0.25rem;
+}
+
+
+.attack-div {
+    display: flex;
+}
+
+.attack-name {
+    font-size: x-large;
+    margin-top: 0.75rem;
+}
+
+.attack-description {
+    font-size: medium;
+    margin-top: 0.25rem;
+    color: gray;
+}
+
+
+.weak-div {
+    display: flex;
+    width: 33.333vw;
+}
+
+.weak-hd{
+    display: flex;
+    justify-content: start;
+    font-size: small;
+    color: gray;
+}
+
+
+.weak-value{
+    display: flex;
+    justify-content: start;
+    margin-top: 0.25rem;
+    font-size: large;
+}
+
+
+.bottom-info{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bottom-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.block-hd{
+    display: flex;
+    justify-content: center;
+    font-size: x-small;
+    color: gray;
+}
+
+.block-value {
+    display: flex;
+    justify-content: center;
+    font-size: x-small;
+
+}

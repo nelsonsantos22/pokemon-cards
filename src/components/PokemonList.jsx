@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import {BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
-import SearchBox from './SearchBox';
-
 import { useSelector } from 'react-redux';
 
+import SearchBox from './SearchBox';
 import PokemonCard from './PokemonCard';
 
-import '../app.css';
-
+import '../css/app.css';
 
 export default function PokemonList(props) {
 
@@ -24,21 +22,21 @@ export default function PokemonList(props) {
     }, [searchPokemon, pokemonCards])
 
 
-  const handleSearchResult =  () => {
+    const handleSearchResult =  () => {
 
-    const result = pokemonCards.filter(pokemon => pokemon.name.toLowerCase().includes(searchPokemon))
-    setSearchResult(result)
+        const result = pokemonCards.filter(pokemon => pokemon.name.toLowerCase().includes(searchPokemon))
+        setSearchResult(result)
 
-  }
+    }
 
 
-  const handleSearch = event => {
-    setSearchPokemon(event.target.value)
-  }
-
+    const handleSearch = event => {
+        setSearchPokemon(event.target.value)
+    }
  
  
   return (
+
     <div className="App">
         
         <SearchBox searchPokemon ={searchPokemon} handleSearch = {handleSearch}/>
@@ -46,6 +44,7 @@ export default function PokemonList(props) {
         <div className = "card-container">
             {searchResult.map ((element, index) => {
                 return (
+
                     <div className = "card" key = {index}>
                         <Link to ={'/' + element.name.toLowerCase()}>
                             <PokemonCard 
@@ -53,9 +52,11 @@ export default function PokemonList(props) {
                             />
                         </Link>
                     </div>
+                    
                 )
             })}
         </div>
+
       </div>  
   );
 }
