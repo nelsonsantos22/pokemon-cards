@@ -9,15 +9,16 @@ import PokemonInfo from './components/PokemonInfo';
 
 const ALL_POKEMONS = "https://api.pokemontcg.io/v1/cards";
 
-export default function App(props) {
 
-  const pokemonCards = useSelector(state => state.pokemonCards)
+export default function App (props) {
 
   useEffect(() => {
     
     fetchPokemonApi();
 
   }, [])
+
+  const pokemonCards = useSelector(state => state.pokemonCards)
 
   const dispatch = useDispatch();
 
@@ -30,7 +31,7 @@ export default function App(props) {
       console.log(error);
     }
   }
- 
+
   return (
     <div>
       <h1>My Pokemon Card Collection</h1>
@@ -54,3 +55,4 @@ export default function App(props) {
     </div>
   );
 }
+
