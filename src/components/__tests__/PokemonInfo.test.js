@@ -15,3 +15,10 @@ test('render <PokemonInfo />', () => {
     expect(cardImg).toBeInTheDocument();
 
 });
+
+test('check card image size', () => {
+    const card = getByTestId('pokemon-card');
+
+    expect(card).to
+})
+
