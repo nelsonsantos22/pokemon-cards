@@ -11,6 +11,7 @@ export default function PokemonInfo (props) {
 
             <div className = 'img-div'>
                 <img 
+                    data-testid = 'pokemon-card'
                     calssName = 'card-img' 
                     src = {props.data.imageUrl} 
                     alt = {props.data.name}

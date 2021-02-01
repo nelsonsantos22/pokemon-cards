@@ -5,7 +5,10 @@ import '../css/search.css';
 export default function SearchBox (props) {
     return (
 
-        <div className = 'search-box'>
+        <div 
+            className = 'search-box'
+            data-testid = 'search-input'
+        >
 
             <input 
                 type='search' 
@@ -13,6 +16,7 @@ export default function SearchBox (props) {
                 value = {props.searchPokemon}
                 onChange = {props.handleSearch}
                 className = 'search-input'
+                data-testid = 'input-field'
             />
 
         </div>
