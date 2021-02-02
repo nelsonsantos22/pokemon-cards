@@ -11,4 +11,4 @@ test('check if input displays', () => {
     expect(searchInput).toBeInTheDocument();
     expect(inputField).toHaveValue('');
 
-})
+});

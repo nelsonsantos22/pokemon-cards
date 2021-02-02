@@ -50,7 +50,7 @@ export default function PokemonList() {
                     width = '25%'
                     className = 'notFound-gif'
                 />  
-                <h2>Pokemon not found</h2>  
+                <h2>Charmander is confused</h2>  
             </div>
             
             ) 
@@ -61,6 +61,7 @@ export default function PokemonList() {
                         alt = 'pokeball'
                         width = '25%'
                     />
+                    <h2 data-testid = 'loading'>Loading</h2> 
                 </div>
                 )
                 : '' 

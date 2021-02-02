@@ -12,7 +12,9 @@ import './css/app.css';
 
 const ALL_POKEMONS = "https://api.pokemontcg.io/v1/cards";
 
+
 export default function App () {
+
 
   useEffect(() => {
     
@@ -20,19 +22,26 @@ export default function App () {
 
   }, [])
 
-  const pokemonCards = useSelector(state => state.pokemonCards)
+
+  const pokemonCards = useSelector(state => state.pokemonCards);
 
   const dispatch = useDispatch();
 
+
   const fetchPokemonApi = async () => {
+
     try {
+
       const response = await Axios.get(ALL_POKEMONS);
       dispatch(fetchPokemons(response.data.cards));
 
     } catch (error) {
+
       console.log(error);
+    
     }
   }
+
 
   return (
 
@@ -45,21 +54,27 @@ export default function App () {
         <div className="App">
 
           <Switch>
+
             {pokemonCards.map((element, idx) => {
               return(
+
                 <Route path = {'/' + element.name.toLowerCase()} key = {idx}>
                   <PokemonInfo data= {element} />
                 </Route>
+
               )
             })}
+
             <Route path = '/'>
               <PokemonList />
             </Route>
+
           </Switch>
 
         </div>
 
       </Router>
+      
     </div>
   );
 }

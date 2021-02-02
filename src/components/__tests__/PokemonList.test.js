@@ -8,6 +8,7 @@ import { shallow } from "enzyme";
 
 import PokemonList from '../PokemonList';
 
+
 const mockStore = configureStore();
 const state = {};
 let store = mockStore(state);
@@ -25,4 +26,3 @@ const pokemonComponent = () => {
 test('render <PokemonList /> without errors', () => {
     shallow(pokemonComponent());
 })
-
